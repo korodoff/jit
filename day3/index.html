@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- form -->
+   Forms :To capture the data or to collect the data from the user  
+
+   "Forms : Radio button and Checkbox,Dropdown,text,email,tel,password,submit
+  
+
+   input tag type text use for inputing strings
+   input tag type email use for inputing email
+   input tag type password use for inputing password
+
+   placeholder attribute is use for providing more information about the input
+   reqired attribute use when the field are mandatory to filled up
+
+
+Radio Buttons:Radio Buttons is used for selectiong only one option 
+Checkbox:Which is used to select Multiple Options
+
+
+In radio buttons name should be same 
+
+    <form action="">
+        <label for="Name">Name:
+            <input type="text" name="Name" id="Name" 
+            placeholder="John clark" required>
+
+        </label><br><br>
+        <label for="email">email:
+            <input type="email" name="email" id="email"
+            placeholder="something@gmail.com" required>
+        </label><br><br>
+        <label for="password">Password:
+            <input type="password" name="password" id="password" required>
+        </label>
+        <!-- radio -->
+        <h1>Language</h1>
+        <input type="radio" name="language" id="javascript" value="javascript">
+        <label for="javascript">javascript </label><br>
+        <input type="radio" name="language" id="python" value="python">
+        <label for="python">python</label>
+
+        <!-- checkbox -->
+        <h1>course</h1>
+        <input type="checkbox" name="course" id="science" value="science">
+        <label for="science">Science</label><br>
+        <input type="checkbox" name="course" id="arts" value="arts">
+        <label for="arts">arts</label><br>
+        <input type="checkbox" name="course" id="commers" value="commers">
+        <label for="commers">commers</label>
+         <!-- dropdown -->
+         <!-- select tag use fo cascading dropdown -->
+         <h1>dropdown</h1>
+         <label for="field">Field:
+          <select name="course" id="field" required>
+              <option value="science">science</option>
+              <option value="arts">arts</option>
+              <option value="commers">commers</option>
+          </select>
+        </label><br>
+          <!-- creating a comment or text-area section -->
+          <textarea name="comment" id="comment" cols="30" rows="10" required></textarea><br>
+          <!-- phone no -->
+          <label for="phno">Ph.no: 
+            <input type="tel" name="number" id="phno" required>
+          </label><br>
+          <input type="submit" value="submit">
+         
+    </form>
+
+
+</body>
+</html>

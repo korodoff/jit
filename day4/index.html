@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <!-- css :Cascading style sheets -->
+    <!-- css is of three type inline,internal and external css -->
+    <!-- style is called as an internal css -->
+    <style>
+        table{
+            border: 1px solid;
+            border-collapse:collapse
+        }
+    </style>
+</head>
+<body>
+    <h1>Table</h1>
+    <!-- table -->
+    Tables :Whenever we want to say information to our clients in tabular manner then we are going to use 
+
+
+
+    table ,tr is an table row,td which is known as table data ,th is known for table heading
+        <table rules="all">
+            <tr>
+                <th>name</th>
+                <th>email</th>
+                <th>state</th>
+            </tr>
+            <tr>
+                <td>1st user firstname</td>
+                <td>1st user lastname</td>
+                <td>1st address of user</td>
+            </tr>
+            <tr>
+                <td>2nd user firstname</td>
+                <td>2nd user lastname </td>
+                <td>2nd user address</td>
+            </tr>
+
+        </table><br>
+<!-- rowspan -use to combine two or more row together to create 1 -->
+        <table>
+            <tr>
+                <th>name</th>
+                <td>ruth</td>
+            </tr>
+            <tr>
+                <th rowspan="3">contactno</th>
+                <td>1234567</td>
+            </tr>
+            <tr>
+                <td>12345312</td>
+            </tr>
+            <tr><td>123456</td></tr>
+        </table><br>
+
+        <!-- colspan use to combine two or more col together to create 1  -->
+        <!-- add inline css to increase the width -->
+        <table style="width: 100%;"> <!-- here 100% means it will take all
+                                            the screen width-->
+            <tr>
+                <th>name</th>
+                <th colspan="2">lastname</th>
+                <th>rollNo</th>
+            </tr>
+            <tr>
+                <td>1st name</td>
+                <td>1st lastname</td>
+                <td>1st rollno</td>
+            </tr>
+            <tr>
+                <td>2nd name</td>
+                <td>2nd lastname</td>
+                <td>2nd rollno</td>
+            </tr>
+            
+        </table><br>
+        <!-- here align attribute use for align item to the center,start,end -->
+        <!-- bgcolor(backgroundcolor): use for changing the background color -->
+       
+        <table align="center">
+            <tr>
+                <th bgcolor="grey">name</th>
+                <th bgcolor="grey">lname</th>
+            </tr>
+            <tr>
+                <td bgcolor="yellow">krut</td>
+                <td bgcolor="yellow">sutnga</td>
+            </tr>
+            <tr>
+                <td><font color="red">mac</font></td>
+                <td><font color="red">sutnga</font></td>
+            </tr>
+        </table><br><br>
+         <!-- iframe is use to include other document within the current
+             html document    -->
+        <iframe src="../day2/res.html" title="iframe" width="500px"
+         height="300px"</iframe>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
